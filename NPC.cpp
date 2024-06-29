@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "NPC.h"
 
-NPC::NPC() : Fighter(), NamedNPC(), Leveling(), portraitIndex((rand() % 3) + 1) { } // TODO: change generation of portrait index to support more portraits
+NPC::NPC() : Fighter(), NamedNPC(), Leveling(), portraitIndex((rand() % 3) + 1) { }
 
 NPC::NPC(const Fighter& F, const NamedNPC& C, const Leveling& L, int pportraitIndex) : Fighter(F), NamedNPC(C), Leveling(L), portraitIndex(pportraitIndex) { }
 

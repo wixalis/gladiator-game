@@ -14,7 +14,6 @@ protected:
 
 	int getDefense() const;
 public:
-	// TODO: move AttackResult over here
 	Fighter();
 	Fighter(const Statistics&, int, int, const unique_ptr<Inventory>, const unique_ptr<Weapon> rightHand_, const unique_ptr<Weapon> leftHand_, const unique_ptr<Armour> armour_);
 	Fighter(const Fighter&);

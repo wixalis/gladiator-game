@@ -13,7 +13,6 @@ private:
 	vector<string> armourTypes;
 	vector<string> cityNames;
 
-	// TODO: errorMessages
 public:
 	Localization();
 	Localization(const Localization&);
@@ -33,5 +32,4 @@ public:
 	const string& getWeaponTypeName(const Weapon&) const;
 	const string& getArmourTypeName(const Armour&) const;
 	const string& getCityName(const City&) const;
-	// TODO: getErrorMessage()
 };

@@ -46,7 +46,6 @@ Player& Player::operator=(const Player& P)
 
 Player::~Player() { }
 
-// TODO: think about regex
 void Player::setName(const string& rName) { name = rName; }
 
 void Player::setPortaitIndex(int i) { portraitIndex = i; }

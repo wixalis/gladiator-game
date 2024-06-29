@@ -62,7 +62,6 @@ const int MIN_ARMOUR_TIER = MIN_TRADER_LEVEL,
 const Armour::ArmourType BASIC_ARMOUR_TYPE = Armour::LIGHT;
 /*
  * OUTDATED
- * TODO: UPDATE
  * Maximum values of the parameters are assumed.
  *
  * HP - (Damage - Defense).

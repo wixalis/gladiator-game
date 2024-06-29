@@ -646,9 +646,6 @@ void Fighting::getAttackResult(const NPC& rOpponent, const Attacker attacker, co
 			result += l.getMessage(Localized::OPPONENT_COUNTERATTACKED) + " " + to_string(ddamage) + " " + l.getMessage(Localized::DAMAGE_GENITIVE);
 			playSound(SoundEnum::SOUND_FIGHT_COUNTERATTACKED);
 			break;
-		default:
-			// TODO: handle error
-			break;
 		}
 		break;
 
@@ -679,9 +676,6 @@ void Fighting::getAttackResult(const NPC& rOpponent, const Attacker attacker, co
 			result += l.getMessage(Localized::YOU_HAVE_COUNTERATTACKED) + " " + to_string(ddamage) + " " + l.getMessage(Localized::DAMAGE_GENITIVE);
 			playSound(SoundEnum::SOUND_FIGHT_COUNTERATTACKED);
 			break;
-		default:
-			// TODO: handle error
-			return;
 		}
 		break;
 	}
@@ -702,31 +696,15 @@ void Fighting::getAttackResult(const NPC& rOpponent, const Attacker attacker, co
 FightStatus Fighting::checkFightStatus(const Player & rPlayer, const NPC & rOpponent)
 {
 	if (rOpponent.getHP() < 10)
-	{
 		if (!rOpponent.isAlive())
 		{
 			isPlayerWon = true;
 			return FightStatus::OPPONENT_LOST;
 		}
 
-		// Offer to surrender to the opponent
-		// TODO: if (yes)
-		//ShowWindow(hItems[Item::BUT_SPARE_OPPONENT], SW_SHOW);
-		//ShowWindow(hItems[Item::BUT_EXECUTE_OPPONENT], SW_SHOW);
-		// return FightStatus::OPPONNENT_SURRENDERED;
-	}
-
 	if (rPlayer.getHP() < 10)
-	{
 		if (!rPlayer.isAlive())
 			return FightStatus::PLAYER_LOST;
-
-		// Offer to surrender to the player
-		// TODO: if (yes)
-		//ShowWindow(hItems[Item::BUT_SURRENDER], SW_SHOW);
-		//ShowWindow(hItems[Item::BUT_CONTINUE], SW_SHOW);
-		// return FightStatus::PLAYER_SURRENDERED;
-	}
 
 	return FightStatus::CONTINUE;
 }
@@ -749,9 +727,6 @@ void Fighting::getFightResult(const FightStatus sstatus, const int playerHP, con
 		result = l.getMessage(Localized::LOST_DEAD);
 		break;
 	case FightStatus::CONTINUE:
-		break;
-	default:
-		// TODO: handle error
 		break;
 	}
 	SendMessage(hItems[MenuItem::STATIC_FIGHT_RESULT], WM_SETTEXT, 0, (LPARAM)result.c_str());

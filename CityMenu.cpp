@@ -993,12 +993,6 @@ void CityMenu::resizeMenu(int cx, int cy)
 	}
 	break;
 
-	case Game::Background::CITY_MENU_ARENA_BET:
-	{
-		// TODO
-	}
-	break;
-
 	case Game::Background::CITY_MENU_MARKET:
 	{
 		const int BIG_STAT_WIDTH = 478, STAT_HEIGHT = 30,
@@ -1232,38 +1226,6 @@ void CityMenu::resizeMenu(int cx, int cy)
 		MoveWindow(hSubItems[CHARACTER_BUT_INVENTORY_INSPECT_ITEM], 0, 0, 100, 30, TRUE);
 		MoveWindow(hSubItems[CHARACTER_BUT_INVENTORY_DESTROY_ITEM], 0, 0, 100, 30, TRUE);
 
-		// TODO
-		// Inspect window
-		/*x = 475, y = 113;
-		MoveWindow(hSubItems[CHARACTER_INSPECT], x, y, 400, 500, TRUE);
-		x += 140, y += BIG_DISTANCE;
-		MoveWindow(hSubItems[CHARACTER_BUT_INSPECT_ICON], x, y, INVENTORY_BUT_WIDTH, INVENTORY_BUT_HEIGHT, TRUE);
-		MoveWindow(hSubItems[CHARACTER_STAT_INSPECT_TYPE], x, y + INVENTORY_BUT_HEIGHT, INVENTORY_BUT_WIDTH - 1, SMALL_STAT_HEIGHT + 3, TRUE);
-		x -= 66, y += INVENTORY_BUT_HEIGHT + SMALL_STAT_HEIGHT + BIG_DISTANCE * 2;
-
-		MoveWindow(hSubItems[CHARACTER_STAT_INSPECT_DAMAGE], x, y, BIG_STAT_WIDTH, BIG_STAT_HEIGHT, TRUE);
-		MoveWindow(hSubItems[CHARACTER_STAT_INSPECT_ARMOUR_DEFENSE], x, y, BIG_STAT_WIDTH, BIG_STAT_HEIGHT, TRUE);
-		MoveWindow(hSubItems[CHARACTER_STAT_INSPECT_SHIELD_DEFENSE], x, y, BIG_STAT_WIDTH, BIG_STAT_HEIGHT, TRUE);
-		y += BIG_STAT_HEIGHT + BIG_DISTANCE;
-
-		MoveWindow(hSubItems[CHARACTER_STAT_INSPECT_STRENGTH_SCALE], x, y, BIG_STAT_WIDTH, BIG_STAT_HEIGHT, TRUE);
-		MoveWindow(hSubItems[CHARACTER_STAT_INSPECT_SHIELD_BLOCK_CHANCE], x, y, BIG_STAT_WIDTH, BIG_STAT_HEIGHT, TRUE);
-		y += BIG_STAT_HEIGHT + BIG_DISTANCE;
-
-		MoveWindow(hSubItems[CHARACTER_STAT_INSPECT_DEXTERITY_SCALE], x, y, BIG_STAT_WIDTH, BIG_STAT_HEIGHT, TRUE);
-		y += BIG_STAT_HEIGHT + BIG_DISTANCE;
-
-		MoveWindow(hSubItems[CHARACTER_STAT_INSPECT_VALUE], x, y, BIG_STAT_WIDTH, BIG_STAT_HEIGHT, TRUE);
-		y += BIG_STAT_HEIGHT + BIG_DISTANCE;
-
-		MoveWindow(hSubItems[CHARACTER_STAT_INSPECT_QUANTITY], x, y, BIG_STAT_WIDTH, BIG_STAT_HEIGHT, TRUE);
-		y += BIG_STAT_HEIGHT + BIG_DISTANCE;
-
-		MoveWindow(hSubItems[CHARACTER_STAT_INSPECT_TOTAL_VALUE], x, y, BIG_STAT_WIDTH, BIG_STAT_HEIGHT, TRUE);
-		y += BIG_STAT_HEIGHT * 2 + BIG_DISTANCE;
-
-		MoveWindow(hSubItems[CHARACTER_BUT_INSPECT_CLOSE], x + 50, y, BIG_STAT_WIDTH - 100, BIG_STAT_HEIGHT, TRUE);*/
-
 		// Back button
 		MoveWindow(hSubItems[CHARACTER_BUT_BACK], 364, 680, 300, BIG_STAT_HEIGHT, TRUE);
 	}
@@ -1305,10 +1267,6 @@ void CityMenu::handleInput(HWND hWnd, UINT m, WPARAM wp, LPARAM lp)
 					WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | BS_OWNERDRAW,
 					0, 0, 0, 0, hWnd, 0, hInst, 0
 				);
-				hSubItems[ARENA_BUT_BET] = CreateWindow("BUTTON", l.getMessage(Localized::BET).c_str(),
-					WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | BS_OWNERDRAW,
-					0, 0, 0, 0, hWnd, 0, hInst, 0
-				);
 				hSubItems[ARENA_BUT_TRAIN] = CreateWindow("BUTTON", l.getMessage(Localized::TRAIN).c_str(),
 					WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | BS_OWNERDRAW,
 					0, 0, 0, 0, hWnd, 0, hInst, 0
@@ -1340,10 +1298,6 @@ void CityMenu::handleInput(HWND hWnd, UINT m, WPARAM wp, LPARAM lp)
 				hSubItems.resize(QUEST_ITEM_NUMBER);
 
 				hSubItems[QUEST_BUT_LANISTA] = CreateWindow("BUTTON", l.getMessage(Localized::LANISTA).c_str(),
-					WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | BS_OWNERDRAW,
-					0, 0, 0, 0, hWnd, 0, hInst, 0
-				);
-				hSubItems[QUEST_BUT_TAVERN] = CreateWindow("BUTTON", l.getMessage(Localized::TAVERN).c_str(),
 					WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | BS_OWNERDRAW,
 					0, 0, 0, 0, hWnd, 0, hInst, 0
 				);
@@ -1679,11 +1633,6 @@ void CityMenu::handleInput(HWND hWnd, UINT m, WPARAM wp, LPARAM lp)
 
 				updateWindow(hWnd);
 			}
-			if ((HWND)lp == hSubItems[ARENA_BUT_BET])
-			{
-				playSound(SoundEnum::SOUND_BUTTON_CLICK);
-				// TODO
-			}
 
 			if ((HWND)lp == hSubItems[ARENA_BUT_TRAIN])
 			{
@@ -1759,10 +1708,6 @@ void CityMenu::handleInput(HWND hWnd, UINT m, WPARAM wp, LPARAM lp)
 					WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | BS_OWNERDRAW,
 					0, 0, 0, 0, hWnd, 0, hInst, 0);
 
-				hSubMenuItems[LANISTA_BUT_TAKE_QUEST] = CreateWindow("BUTTON", l.getMessage(Localized::TAKE_QUEST).c_str(),
-					WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | BS_OWNERDRAW,
-					0, 0, 0, 0, hWnd, 0, hInst, 0);
-
 				buf = l.getMessage(Localized::ASK_FOR_PROMOTION) + " (" + to_string(CHARISMA_FOR_PROMOTION) + " " + l.getMessage(Localized::CHARISMA_GENITIVE) + ")";
 				hSubMenuItems[LANISTA_BUT_ASK_FOR_PROMOTION] = CreateWindow("BUTTON", buf.c_str(),
 					WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | BS_OWNERDRAW,
@@ -1783,11 +1728,6 @@ void CityMenu::handleInput(HWND hWnd, UINT m, WPARAM wp, LPARAM lp)
 				game.setBackground(Game::Background::CITY_MENU_LANISTA);
 
 				updateWindow(hWnd);
-			}
-
-			if ((HWND)lp == hSubItems[QUEST_BUT_TAVERN])
-			{
-				// TODO
 			}
 
 			if ((HWND)lp == hSubItems[QUEST_BUT_TALK_TO_PEOPLE])
@@ -1877,11 +1817,6 @@ void CityMenu::handleInput(HWND hWnd, UINT m, WPARAM wp, LPARAM lp)
 					game.getStoryScreen().displayScreen(hWnd, StoryScreen::Screen::GAINED_FREEDOM);
 					return;
 				}
-			}
-
-			if ((HWND)lp == hSubMenuItems[LANISTA_BUT_TAKE_QUEST])
-			{
-				// TODO
 			}
 
 			if ((HWND)lp == hSubMenuItems[LANISTA_BUT_ASK_FOR_PROMOTION])
@@ -2057,12 +1992,6 @@ void CityMenu::handleInput(HWND hWnd, UINT m, WPARAM wp, LPARAM lp)
 		}
 		break;
 
-		case Game::Background::CITY_MENU_ARENA_BET:
-		{
-			// TODO
-		}
-		break;
-
 		case Game::Background::CITY_MENU_MARKET:
 		{
 			// Player's items buttons
@@ -2206,7 +2135,7 @@ void CityMenu::handleInput(HWND hWnd, UINT m, WPARAM wp, LPARAM lp)
 						// Get item ID
 						int id = rItem->getID();
 						// Make copy of item
-						unique_ptr<Item> itemCopy = rTraderInventory.getItem(id)->clone(); // TODO: update item stats
+						unique_ptr<Item> itemCopy = rTraderInventory.getItem(id)->clone();
 						itemCopy->calculatePrice(game.getPlayer().getCharisma(), true);
 						// Remove item from trader
 						rTraderInventory.removeItem(id);

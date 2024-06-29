@@ -250,7 +250,7 @@ const string& Localization::getNPCLastName(const NamedNPC& NPC) const
 
 const string& Localization::getNPCNickname(const NamedNPC& NPC) const
 {
-	return npcLastNames[NPC.getLastNameIndex()]; // TODO: return gladiatorNicknames[NPC.getNicknameIndex()];
+	return npcLastNames[NPC.getLastNameIndex()];
 }
 
 const string& Localization::getItemTypeName(const Item& I) const

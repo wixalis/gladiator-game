@@ -32,9 +32,7 @@ Fighter::Fighter(
 	rightHand(move(pRightHand)),
 	leftHand(move(pLeftHand)),
 	armour(move(pArmour))
-{		
-	// TODO: think about processing exceptions
-}
+{ }
 
 Fighter::Fighter(const Fighter& F) :
 	Statistics(F),

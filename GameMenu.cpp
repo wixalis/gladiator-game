@@ -204,9 +204,9 @@ void GameMenu::drawMenu(HWND hWnd, HDC hdc, int cx, int cy)
 		switch (game.getBackground())
 		{
 		default:case Game::Background::GAME_MENU: path = DIRECTORY + "menuBackground" + FORMAT; break;
-		case Game::Background::GAME_MENU_SAVE: path = DIRECTORY + "menuBackground" + FORMAT; break; // TODO: background
-		case Game::Background::GAME_MENU_LOAD: path = DIRECTORY + "menuBackground" + FORMAT; break; // TODO: background
-		case Game::Background::GAME_MENU_SETTINGS: path = DIRECTORY + "menuBackground" + FORMAT; break; // TODO: background
+		case Game::Background::GAME_MENU_SAVE: path = DIRECTORY + "menuBackground" + FORMAT; break;
+		case Game::Background::GAME_MENU_LOAD: path = DIRECTORY + "menuBackground" + FORMAT; break;
+		case Game::Background::GAME_MENU_SETTINGS: path = DIRECTORY + "menuBackground" + FORMAT; break;
 		}
 		// Loading image
 		if (hBackgroundImage != NULL)
@@ -243,12 +243,6 @@ void GameMenu::resizeMenu(int cx, int cy)
 			y += ITEM_HEIGHT + DISTANCE;
 			MoveWindow(hItem, x, y, ITEM_WIDTH, ITEM_HEIGHT, TRUE);
 		}
-	}
-	break;
-
-	case Game::Background::GAME_MENU_SAVE:
-	{
-		// TODO
 	}
 	break;
 
@@ -322,7 +316,6 @@ void GameMenu::handleInput(HWND hWnd, UINT m, WPARAM wp, LPARAM lp)
 			{
 				playSound(SoundEnum::SOUND_BUTTON_CLICK);
 				game.saveToFile();
-				// TODO: Stylize
 				MessageBox(hWnd, l.getMessage(Localized::SAVE_SUCCESFUL).c_str(), "", MB_OK);
 			}
 			if ((HWND)lp == hItems[BUT_LOAD])

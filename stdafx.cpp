@@ -1,10 +1,7 @@
 // stdafx.cpp : source file that includes just the standard includes
 // GladiatorGame.pch will be the pre-compiled header
 // stdafx.obj will contain the pre-compiled type information
-/*
- * It is the game about gladiators in the Rome.
- * ...
- */
+// It is the game about gladiators in the Rome.
 
 #include "stdafx.h"
 
@@ -22,41 +19,13 @@ Game game;
 
 void updateWindow(HWND hWnd)
 {
-	//if (!game.isBackgroundChanged())
-	//	return;
 	RECT windowRect;
 	GetWindowRect(hWnd, &windowRect);
 	SendMessage(hWnd, WM_SIZE, SIZE_RESTORED, MAKELPARAM(windowRect.right - windowRect.left, windowRect.bottom - windowRect.top));
 	InvalidateRect(hWnd, 0, 1);
 	UpdateWindow(hWnd);
-	//RedrawWindow(hWnd, 0, 0, RDW_ERASE | RDW_INVALIDATE | RDW_ALLCHILDREN);
 }
 
-//void adjustStaticControlHeight(HWND hStatic, const string& text)
-//{
-//	HDC hdc = GetDC(hStatic);
-//
-//	// Get current size and position for window
-//	RECT staticRect;
-//	GetWindowRect(hStatic, &staticRect);
-//
-//	// Calculate new height for text
-//	DrawText(hdc, text.c_str(), -1, &staticRect, DT_CALCRECT | DT_WORDBREAK);
-//
-//	ReleaseDC(hStatic, hdc);
-//
-//	// Apply padding
-//	int padding = 10;
-//	staticRect.left -= padding;
-//	staticRect.top -= padding;
-//	staticRect.right += padding;
-//	staticRect.bottom += padding;
-//
-//	// Set new window height
-//	SetWindowPos(hStatic, nullptr, 0, 0, staticRect.right - staticRect.left, staticRect.bottom - staticRect.top, SWP_NOMOVE | SWP_NOZORDER);
-//}
-
-// TODO: think about move to Converter
 string toStringPrecision(double n, int precision)
 {
 	string s = to_string(n);
@@ -846,7 +815,7 @@ void playSound(SoundEnum soundEnum)
 	case SoundEnum::SOUND_FIGHT_DODGED: path = DIRECTORY + "fightDodge" + FORMAT; break;
 	case SoundEnum::SOUND_FIGHT_BLOCKED: path = DIRECTORY + "fightBlock" + FORMAT; break;
 	case SoundEnum::SOUND_FIGHT_CRIT: path = DIRECTORY + "fightCrit" + FORMAT; break;
-	case SoundEnum::SOUND_FIGHT_STUNNED: path = DIRECTORY + "fightBlock" + FORMAT; break; // TODO: unique sound
+	case SoundEnum::SOUND_FIGHT_STUNNED: path = DIRECTORY + "fightBlock" + FORMAT; break;
 	case SoundEnum::SOUND_FIGHT_COUNTERATTACKED: path = DIRECTORY + "fightCounterattack" + FORMAT; break;
 	case SoundEnum::SOUND_GOLD: path = DIRECTORY + "gold" + FORMAT; break;
 	case SoundEnum::SOUND_LEVEL_UP: path = DIRECTORY + "levelUp" + FORMAT; break;
@@ -854,34 +823,6 @@ void playSound(SoundEnum soundEnum)
 
 	// 2. Play selected sound
 	PlaySound(path.c_str(), 0, SND_ASYNC | SND_NOSTOP);
-
-	// TODO: remake function using MCI
-	// 2. Compose full command string
-	//buf = "open \"" + path + "\" type mpegvideo alias sound";
-	//// Create command string
-	//const char* command = buf.c_str();
-	//MCIERROR error = mciSendString(command, NULL, 0, NULL);
-
-	//// TODO: handle error
-	//if (error)
-	//{
-	//	char errorText[128];
-	//	mciGetErrorString(error, errorText, sizeof(errorText));
-	//	return;
-	//}
-
-	//// 3. Play selected sound
-	//command = "play sound";
-
-	//error = mciSendString(command, NULL, 0, NULL);
-
-	//// TODO: jandle error
-	//if (error)
-	//{
-	//	char errorText[128];
-	//	mciGetErrorString(error, errorText, sizeof(errorText));
-	//	return;
-	//}
 }
 
 // __________ Game process __________
@@ -1073,24 +1014,6 @@ LRESULT CALLBACK WFunc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			return result;
 	}
 	break;
-
-	case WM_MOUSEMOVE:
-		// TODO: improve | delete ?
-		// An attempt to handle user placing cursor over button without clicking. Currently only used in MainMenu
-		game.handleInput(hwnd, message, wParam, lParam);
-		break;
-
-	case WM_MOUSEHOVER:
-		// TODO: improve | delete ?
-		// An attempt to handle user placing cursor over button without clicking. Currently only used in MainMenu
-		game.handleInput(hwnd, message, wParam, lParam);
-		break;
-
-	case WM_MOUSELEAVE:
-		// TODO: improve | delete ?
-		// An attempt to handle user placing cursor over button without clicking. Currently only used in MainMenu
-		game.handleInput(hwnd, message, wParam, lParam);
-		break;
 
 	case WM_DESTROY:
 

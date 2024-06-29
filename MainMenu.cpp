@@ -288,11 +288,11 @@ void MainMenu::drawMenu(HWND hWnd, HDC hdc, int cx, int cy)
 				ShowWindow(hItems[BUT_LOAD_GAME], SW_HIDE);
 			}
 			break;
-		case Game::Background::MAIN_MENU_LOAD: path = DIRECTORY + "menuBackground" + FORMAT; break; // TODO: background
+		case Game::Background::MAIN_MENU_LOAD: path = DIRECTORY + "menuBackground" + FORMAT; break;
 		case Game::Background::MAIN_MENU_NEW_GAME: path = DIRECTORY + "characterCreationBackground" + FORMAT; break;
 		case Game::Background::MAIN_MENU_NEW_GAME_EQUIPMENT: path = DIRECTORY + "startingEquipmentBackground" + FORMAT; break;
-		case Game::Background::MAIN_MENU_SETTINGS: path = DIRECTORY + "menuBackground" + FORMAT; break; // TODO: background
-		case Game::Background::MAIN_MENU_SPECIALS: path = DIRECTORY + "menuBackground" + FORMAT; break; // TODO: background
+		case Game::Background::MAIN_MENU_SETTINGS: path = DIRECTORY + "menuBackground" + FORMAT; break;
+		case Game::Background::MAIN_MENU_SPECIALS: path = DIRECTORY + "menuBackground" + FORMAT; break;
 		}
 		// Loading image
 		if (hBackgroundImage != NULL)
@@ -1049,7 +1049,7 @@ void MainMenu::handleInput(HWND hWnd, UINT m, WPARAM wp, LPARAM lp)
 				hSubItems.resize(SettingsItem::SETTINGS_ITEM_NUMBER);
 
 				hSubItems[SPECIALS_STAT_SPECIALS] = CreateWindow("STATIC", l.getMessage(Localized::SPECIALS).c_str(), WS_CHILD | WS_VISIBLE | SS_CENTER | SS_OWNERDRAW, 0, 0, 0, 0, hWnd, 0, hInst, 0);
-				hSubItems[SPECIALS_STAT_TEXT] = CreateWindow("STATIC", l.getMessage(Localized::SPECIALS_TEXT).c_str(), WS_CHILD | WS_VISIBLE | SS_OWNERDRAW, 0, 0, 0, 0, hWnd, 0, hInst, 0); // TODO
+				hSubItems[SPECIALS_STAT_TEXT] = CreateWindow("STATIC", l.getMessage(Localized::SPECIALS_TEXT).c_str(), WS_CHILD | WS_VISIBLE | SS_OWNERDRAW, 0, 0, 0, 0, hWnd, 0, hInst, 0);
 				hSubItems[SPECIALS_BUT_BACK] = CreateWindow("BUTTON", l.getMessage(Localized::BACK).c_str(), WS_CHILD | WS_VISIBLE | BS_OWNERDRAW, 0, 0, 0, 0, hWnd, 0, hInst, 0);
 
 				game.setBackground(Game::Background::MAIN_MENU_SPECIALS);
@@ -1777,96 +1777,6 @@ void MainMenu::handleInput(HWND hWnd, UINT m, WPARAM wp, LPARAM lp)
 		}
 	}
 	break;
-
-	//case WM_MOUSEMOVE:
-	//{
-	//	static int i;
-	//	// First method
-	//	RECT rect;
-	//	POINT pt;
-	//	// Get cursor position
-	//	GetCursorPos(&pt);
-	//	ScreenToClient(hWnd, &pt);
-
-	//	// Test
-	//	HDC hdc;
-	//	PAINTSTRUCT ps;
-	//	buf = to_string(pt.x) + " " + to_string(pt.y);
-	//	for (HWND hItem : hItems)
-	//		if ((HWND)lp == hItem)
-	//			SetWindowText(hWnd, buf.c_str());
-
-	//	// Second method
-	//	// Get cursor position
-	//	TRACKMOUSEEVENT tme;
-	//	tme.cbSize = sizeof(TRACKMOUSEEVENT);
-	//	tme.dwFlags = TME_HOVER | TME_LEAVE;
-	//	tme.dwHoverTime = HOVER_DEFAULT;
-
-	//	switch (game.getBackground())
-	//	{
-	//	case Game::Background::MAIN_MENU:
-	//	{
-	//		for (HWND hItem : hItems)
-	//		{
-	//			// Get button position
-	//			GetWindowRect(hItem, &rect);
-	//			MapWindowPoints(HWND_DESKTOP, hWnd, (LPPOINT)&rect, 2);
-	//			//InvalidateRect(hWnd, &rect, 1);
-
-	//			if (PtInRect(&rect, pt))
-	//			{
-	//				HBRUSH hBrush = CreateSolidBrush(COLOR_ROMAN_RED);
-	//				SetWindowText(hItem, to_string(i).c_str());
-	//				i++;
-	//				hdc = BeginPaint(hWnd, &ps);
-	//				DrawText(hdc, "Test", -1, &rect, DT_LEFT);
-	//				FillRect(hdc, &rect, hBrush);
-	//				EndPaint(hWnd, &ps);
-	//				DeleteObject(hBrush);
-	//			}
-	//		}
-	//	}
-	//	break;
-
-	//	case Game::Background::MAIN_MENU_LOAD:
-	//	{
-	//		// TODO
-	//	}
-	//	break;
-
-	//	case Game::Background::MAIN_MENU_NEW_GAME:
-	//	{
-	//		// TODO
-	//	}
-	//	break;
-
-	//	case Game::Background::MAIN_MENU_SETTINGS:
-	//	{
-	//		// TODO
-	//	}
-	//	break;
-
-	//	case Game::Background::MAIN_MENU_SPECIALS:
-	//	{
-	//		// TODO
-	//	}
-	//	break;
-	//	}
-	//}
-	//break;
-
-	//case WM_MOUSEHOVER:
-	//{
-	//	SetWindowText(hWnd, "First stage succesful");
-	//}
-	//break;
-
-	//case WM_MOUSELEAVE:
-	//{
-	//	SetWindowText(hWnd, "Second stage succesful");
-	//}
-	//break;
 	}
 }
 

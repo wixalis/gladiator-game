@@ -16,7 +16,6 @@ public:
 	unique_ptr<NPC>& getGladiator(int);
 
 	void changeGladiator(int index_, int level_);
-	// TODO: void update();
 
 	// Save and load
 	void saveToFile(const string&) const;
