@@ -1,0 +1,240 @@
+Messages log
+Continue game
+Resume game
+Save game
+Load game
+Start new game
+Settings
+Specials
+This game was made by a student at the Center for Computer Education (c.Dnipro, Ukraine). This is an educational project created as part of training and as a personal hobby. The idea for the game was suggested by a friend of mine who was inspired by another game about gladiators. It was originally a console game, but as I learned it was remade using WinAPI. It demonstrates my programming skills. At the moment, the functions of character leveling, moving around the map, inventory, trading, battle, saving and loading, as well as localization are implemented here. The game's plot is still in development, but the first act is already available, as well as a small quest in the first city. Over time it will be improved.
+Exit to main menu
+Exit
+Character creation
+Name
+Age
+Unnassigned attributes
+Strength
+Constitution
+Dexterity
+Intelligence
+Wisdom
+Charisma
+strength
+constitution
+dexterity
+intelligence
+wisdom
+charisma
+Back
+Next
+Video settings
+Audio
+Autosave
+Language
+Gladiator
+City of
+Arena
+Walk the streets
+Market
+View character
+Rest
+Map
+Travel
+You have traveled to
+Enter
+Menu
+Fight
+Make a bet
+Train
+Lanista
+Tavern
+Talk to people
+Buy freedom
+Take an assignment
+Ask for promotion
+Choose opponent
+Level
+Experience
+Damage
+Block defense
+Block chance
+Empty hand
+Health
+Fame
+Strength scale
+Dexterity scale
+Armour defense
+Evasion chance
+Stun chance reduction
+No armour
+Reset
+Apply
+You have rested and restored
+You are fully healed
+You are fully healed and don't need to rest
+health
+hp
+lvl
+You have trained and gained
+You have to rest before you can train
+You have leveled up to level
+experience
+You have to choose opponent which you want to fight.
+Opponent is not selected 
+You have to rest before you can fight.
+You are heavily injured
+Spare opponent
+Execute opponent
+Surrender
+Continue
+End fight
+versus
+Opponent has higher wisdom so he attacks first
+You have higher wisdom so you attack first
+You have fought with
+You have won
+You have lost
+You have gained
+fame
+You have dealt
+You have stunned the opponent and dealt
+You have missed
+Oponent have blocked and taken
+You have missed. The opponent counterattacked and dealt 
+Opponent have dealt
+Opponent have stunned you and dealt
+Opponent missed
+You have blocked and taken
+Opponent missed. You have counterattacked and dealt
+damage
+critical damage
+You have won. Opponent is executed
+You have won. Opponent have surrendered with health points of
+You have surrendered with health points of
+You have lost
+Inventory of
+Right hand
+Left hand
+Armour
+Unequip
+Equip
+Inspect
+Destroy
+Value
+Quantity
+Total price
+Tier
+Sell
+Buy
+Can't sell item
+Trader doesn't have enough gold
+Can't buy item
+You don't have enough gold
+You don't have enough inventory space
+gold
+Character
+Equipment
+Choose starting equipment
+Set
+Select
+Selected
+Need to select equipment
+Equipment unselected
+Game is successfully saved
+Choose save
+Save unselected
+Ancient Rome (74 BC)
+The times of the Spartacus uprising are an era when stories filled with the struggle between slavery and the desire for freedom were played out. At the center of this chaos are you, the Gladiator, whose fate will largely be determined by your decisions...
+In those days, the fate of one gladiator was intertwined with the history of his time. The beginning of his journey was shackled by the lash of slavery. He was just one of many gladiators, prisoners whose lives and freedom hung in the balance depending on his skill in battle. Almost every day he entered the arena, where he fought not only for his survival, but also for a chance at liberation. In the small town of Perugia, in the very center of Italy, his journey will begin.
+unnassigned attributes
+You are a slave. You need to gain freedom to be able to travel freely.
+Can't travel
+Your first victory. But definitely not the last. As a slave gladiator you have to fight for your life. And maybe someday, when you acquire large enough sum of gold, you'll be able to buy yourself freedom from lanista.
+Finally Gladiator acquired enough money to buy himself freedom. As he was falling asleep full of hope he was thinking this is the last time he fells asleep as a slave. Tomorrow he will go to the lanista and buy himself out. But it wasn't meant to happen. The next day as he waked up he was going to take his gold and set himself free. But the money wasn't there. It was stolen.  It was probably done by one his fellow gladiators. But who did it? There wasn't any clue or hope to gain it all back. The Gladiator had to accumulate whole sum once again with great effort.
+Anger swelled in the depths of his heart, burning brighter than the fire of the arena. He couldn't just come to terms with the loss, with the betrayal that had befallen him. Everything he had worked so hard for, everything he had achieved, seemed meaningless. The feeling of powerlessness and untruth burned in his eyes, fueling the fire of his determination to return what was rightfully his and his thirst for change.
+And now, like the last ray of light in the darkness, an opportunity opens up before him. One of his fellow gladiators spoke of connections with Spartacus, a former slave gladiator who is now leading a rebellion for freedom. Using this they could try to escape and join the rebellion, where they can fight for their freedom and justice. Gladiator sees this choice as a chance to find meaning in his loss, to raise his voice and be part of a movement seeking change.
+In this moment of passion and anguish, a new decision is born that will change not only his fate, but also the fate of many others. The gladiator decides to run away and join the rebellion. Now his battle will not only be for survival in the arena, but also for freedom, justice and a future that he himself can create.
+But the gladiator, although he lost a lot, did not give up before this test. He was unable to let go of his dream of freedom, which he had been chasing for so long, and strengthened his determination to continue his path in the arena. Let him have to start over again, restore his name and reputation among his rivals, and work again as before to save up the money for his freedom. Each fight in the arena became a new challenge for him and an opportunity to prove his power and skill.
+Escape
+Stay
+Perhaps the Gladiator's path was difficult and exhausting, but every victory brought him closer to realizing his dream. He found the strength and will to fight, even if it meant he had to fight not only for a chance at freedom, but also for survival. And fate did not keep itself waiting long. During the next battle, a centurion of the Roman legion was present among the spectators in the arena. His eyes fell on the Gladiator, and he saw in him something more than just a fighter fighting for pennies. In the eyes of the Gladiator, the centurion caught a spark of freedom, power and fortitude.
+The intrigued centurion decided to get to know this brave warrior better. After the fight, he invited the Gladiator to his place, expressing his admiration for his skills and courage. The Centurion saw the potential for a great warrior in this Gladiator and saw an opportunity to use his abilities for the benefit of the Roman Republic. The offer of ransom from slavery and joining the legion was an unexpected turn of fate for the gladiator. The centurion promised him not only freedom, but also new horizons, the opportunity to serve Rome and take part in historical events. Thanks to his skill in battle, a Gladiator could gain freedom, become a valuable legionnaire and earn a great fortune.
+The Gladiator, despite all the difficulties and disappointments he experienced in the arena, could not refuse this new opportunity. He decided to take fate into his own hands and join the ranks of the legion to once again pave his way to freedom. This was a challenge he was going to take on no matter what. So, the Gladiator, leaving the arena behind, set off on a new journey, becoming part of the mighty Roman legion. His strength, skill and desire for freedom did not go unnoticed, and he would fight in the most dangerous and prestigious battles, defending the interests of the Roman Republic.
+But the Gladiator, despite all the promises of a good life was not interested in joining the legion. After all, why would he change his current cell to another, although slightly better one? Serving wealthy and mighty people which don't even think of him as a human being? Being a tool in their hands to suppress his fellow gladiators fighting for freedom? This was not his path. The Gladiator declined offer of the centurion and was escorted back to the arena, where he will continue to fight for his freedom.
+Accept offer
+Decline offer
+Finally, after many hard battles and unimaginable efforts, he saved up the necessary amount to buy his freedom. The day he became a free man was filled with mixed feelings of joy and anxiety. He has gained freedom, but what should he do next? Once outside the arena, the Gladiator realized that the world was open to him. New challenges and opportunities awaited him ahead.
+He heard that in the south, in the city of Metaponto, rebels had settled, fighting for their rights and freedoms. This thought captured his imagination. He knew he could use his fighting skills and experience to help them in their fight. Perhaps there he will find like-minded people and be able to continue the fight for justice and freedom. On the other hand, in the east, in the city of Ancona, there was a legion's camp. It was the path to a stable life, perhaps even to wealth and honor. Service in the legion opened up new horizons for him, but he remembered his previous refusal to the centurion. Will he be able to adapt to the discipline and hierarchy of the Legion, once again becoming part of the military machine he has fought against for so long?
+Having made his final decision, the Gladiator left the city and headed south to Metaponto. He was determined to join the rebels and continue his fight for freedom, not only for himself, but for all those who suffered under the yoke of Rome. New battles and new challenges awaited him ahead, but he was ready for them. The Gladiator walked towards his fate, knowing that his path was still far from over, but every step brought him closer to true freedom.
+Having made his final decision, the Gladiator left the city and headed east to Ancona. Although the centurion's offer had once seemed like a chain to him, he now saw it as an opportunity to gain stability and use his fighting skills for the good of Rome. He understood that life in the legion would provide him not only with security, but also with the opportunity to improve his position and perhaps achieve high ranks.
+Join rebels
+Join legion
+You have became a free man
+Lanista agrees that you should be promoted. From now on your rewards on arena will be increased
+Lanista doesn't agree that you should be promoted. Your words haven't impressed him
+Stop it or you will be demoted
+You have already been promoted
+You have already been promoted. What, do you want to be a consul?
+Not enough gold
+You have spent gold on the road
+A gladiator walked through the streets of the Roman city of Perugia, enjoying a rare moment of peace. He noticed an Indian spice merchant sitting outside his stall. The merchant's face was exhausted and sad, and his eyes were full of pain and despair. The gladiator stopped nearby, listening to his whispered prayers.
+What happened, old man? Why are you so sad?
+The merchant looked up and, seeing the Gladiator, did not immediately dare to speak. But then, as if finding strength, he answered: “My name is Shandar.” My daughter, Abhilasha, was kidnapped by Lucilius' men. They took her away and I couldn't do anything. Nobody wants to help me. Please help me get her back.
+Who is this Lucilius?
+Why do I need it?
+Show me where this Lucilius lives.
+(Leave) Sorry, I have other things to do right now.
+- This is a terrible person. A local patrician who decided he could do whatever he wanted. He liked my daughter and took her to serve him.
+“I’m not very rich, but my daughter is the most precious thing to me.” If you help me, I won't be in debt.
+Shandar showed the way, and the Gladiator went to the patrician's house. Approaching the gate, he met guards. One of them rudely stopped him: “Who are you?” This is private territory. Leave while you're still alive.
+I have come for the girl your master is illegally detaining. Give it up and no one will get hurt.
+Ok, I will go.
+The guards laughed: “It’s been a long time since I beat the crap out of some scum.”
+(Fight) Well, let's see who wins.
+(Strength) I'm a gladiator and I eat people like you for breakfast.
+(Charisma) In the name of the law I order you to retreat, otherwise you will have to deal with the magistrate.
+(Success) Come on, we're just kidding. Come on in.
+(Failure) The only thing you'll have for breakfast is your teeth.
+(Success) Calm down, we don't need problems. Come on in, just hurry up.
+(Failure) So I believed that you knew the magistrate.
+(Return at night)
+Returning at night, Gladiator discovered that there were no guards at the entrance.
+Enter the house
+(Dexterity) Try to get inside unnoticed
+(Success) The gladiator climbs over the fence, walks across the back yard and enters the unlocked door.
+(Failure) Gladiator was not silent enough
+Entering the house, the Gladiator found Lucilius sitting in a luxurious hall. The patrician stood up when he saw the Gladiator and asked with contempt: “Who are you that you dare to break into my house?”
+I have come for a girl named Abhilasha, whom you are illegally detaining. Give her back and I'll leave.
+Lucilius grinned and clapped his hands, calling the guards: “Your naivety amazes me.”
+(Fight) When will you learn?
+(Charisma) Only you are naive if you think that my people outside are not waiting for the command to begin the assault on this place.
+- Please do not kill me! You can take her!
+The guards beat Gladitor and threw him out into the street.
+(Failure) Unfortunately, the Gladiator was also unable to help good people. One could only guess what awaited Abhilasha and how her father Shandar would cope with the loss of his daughter.
+(Success) Well, I propose to show prudence and avoid bloodshed in the name of the common good. I'm tired of the girl anyway. You can take her.
+(Failure) How will you give the command if you are dead?
+(Spare) I will spare your life. But if I find out that you are ruining the lives of good people again, then I will come back.
+(Execute) So that you continue to cause pain and suffering? I don't think so.
+How much would you value your life?
+You have only one option to stay alive. Leave the city and never return.
+Passing by the lifeless body of Lucilius, the Gladiator went in search of the girl.
+Lucilius begged: “Please, take the gold you want, but leave me.” He opened a chest with a key that stood nearby. The gladiator took out a golden statue from there and put it in his bag.
+(Execute) And you said I was naive?
+So be it, I'll leave. It's a crazy town anyway.
+Now where is the girl?
+The gladiator found Abhilasha locked in one of the rooms of the spacious house. He approached her carefully.
+I have come to free you. Your father Shandar sent me.
+Her eyes filled with tears, and she quietly replied: “I’m so glad.” I was afraid that something terrible might happen to me.
+Let's get out of here.
+They quietly left Lucilius's house the same way.
+They left the house of Lucilius, leaving chaos and destruction behind.
+Returning to Shandar, the Gladiator saw the merchant's face lit up with joy. Father and daughter hugged each other and tears streamed down their faces. Shandar looked at the Gladiator and said: “Thank you, kind man.” You saved our family. We will never forget this.
+(Ask for a reward) I'm happy for you, but I don't work for free.
+- Yes, of course, you deserve a reward. Keep this bag of gold. I would give more if I could. May the gods bless you.
+Take care of each other.
+At parting, Abhilasha looked at the Gladiator with gratitude and asked: - What is your name, warrior?
+My name is
+- Thank you,
+With these words, the Gladiator left. Perugia has returned to its normal life, but for one family, everything has changed forever.
+You walk the streets but nothing happens
+MESSAGE_NUMBER

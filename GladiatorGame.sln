@@ -1,31 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.33423.255
+VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GladiatorGame", "GladiatorGame\GladiatorGame.vcxproj", "{9D7656C0-D4CB-4195-B132-0DD4D21FBE5A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GladiatorGame", "GladiatorGame.vcxproj", "{0C2DECB9-7DBC-4BEB-8F30-130794B83D40}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GladiatorGameSetup", "..\GladiatorGameSetup\GladiatorGameSetup.vdproj", "{FFC1F6CA-9A8E-4364-BF3C-AB4441CFD382}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9D7656C0-D4CB-4195-B132-0DD4D21FBE5A}.Debug|x64.ActiveCfg = Debug|x64
-		{9D7656C0-D4CB-4195-B132-0DD4D21FBE5A}.Debug|x64.Build.0 = Debug|x64
-		{9D7656C0-D4CB-4195-B132-0DD4D21FBE5A}.Debug|x86.ActiveCfg = Debug|Win32
-		{9D7656C0-D4CB-4195-B132-0DD4D21FBE5A}.Debug|x86.Build.0 = Debug|Win32
-		{9D7656C0-D4CB-4195-B132-0DD4D21FBE5A}.Release|x64.ActiveCfg = Release|x64
-		{9D7656C0-D4CB-4195-B132-0DD4D21FBE5A}.Release|x64.Build.0 = Release|x64
-		{9D7656C0-D4CB-4195-B132-0DD4D21FBE5A}.Release|x86.ActiveCfg = Release|Win32
-		{9D7656C0-D4CB-4195-B132-0DD4D21FBE5A}.Release|x86.Build.0 = Release|Win32
+		{0C2DECB9-7DBC-4BEB-8F30-130794B83D40}.Debug|x86.ActiveCfg = Debug|Win32
+		{0C2DECB9-7DBC-4BEB-8F30-130794B83D40}.Debug|x86.Build.0 = Debug|Win32
+		{0C2DECB9-7DBC-4BEB-8F30-130794B83D40}.Release|x86.ActiveCfg = Release|Win32
+		{0C2DECB9-7DBC-4BEB-8F30-130794B83D40}.Release|x86.Build.0 = Release|Win32
+		{FFC1F6CA-9A8E-4364-BF3C-AB4441CFD382}.Debug|x86.ActiveCfg = Debug
+		{FFC1F6CA-9A8E-4364-BF3C-AB4441CFD382}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EBDA6402-55BA-44D8-98BF-2C8129729E22}
+		SolutionGuid = {5A607658-1CDA-4966-A3DD-DF15B246E8F0}
 	EndGlobalSection
 EndGlobal
